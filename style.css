@@ -7,7 +7,31 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+ /* Floating button styles */
+ .whatsapp-float {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 60px; /* Button size */
+  height: 60px; /* Button size */
+  border-radius: 50%;
+  background-color: white; /* Optional background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  z-index: 1000; /* Ensure it's above other elements */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.whatsapp-float:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+.whatsapp-float img {
+  width: 100%; /* Make the image fit the button */
+  height: 100%;
+  border-radius: 50%; /* Ensure the image is circular */
+  object-fit: cover; /* Preserve aspect ratio */
+}
 :root {
   /* Colors */
   --white-color: #fff;
